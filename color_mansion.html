@@ -91,6 +91,12 @@ PAL b
 99,2,255
 NAME Sunset
 
+PAL c
+192,192,192
+255,215,0
+0,0,0
+NAME M's
+
 ROOM 0
 e,a,a,a,a,a,a,a,a,a,q,a,i,a,a,f
 c,0,z,0,0,0,3i,3i,0,0,m,0,0,0,0,b
@@ -113,7 +119,6 @@ ITM 1 11,1
 EXT 12,0 b 4,15 FX tunnel DLG 6
 EXT 15,14 1 0,8 FX tunnel DLG 5
 PAL 0
-TUNE 2
 
 ROOM 1
 e,a,a,a,a,a,a,q,i,q,a,a,a,a,a,f
@@ -139,7 +144,6 @@ EXT 8,0 2 7,15 FX tunnel DLG 7
 EXT 15,8 4 0,8 FX tunnel DLG 8
 EXT 8,15 7 8,0 FX tunnel DLG 9
 PAL 1
-TUNE 2
 
 ROOM 2
 14,a,a,a,11,a,a,a,a,a,11,11,a,a,11,f
@@ -163,7 +167,6 @@ ITM 2 8,1
 EXT 7,15 1 8,0 FX tunnel
 EXT 15,3 3 0,3 FX tunnel DLG e
 PAL 2
-TUNE 2
 
 ROOM 3
 14,a,a,a,a,a,11,a,a,11,a,a,a,a,a,f
@@ -186,7 +189,6 @@ NAME SKY
 ITM 7 14,14
 EXT 0,3 2 15,3 FX tunnel
 PAL 5
-TUNE 2
 
 ROOM 4
 1a,1a,1a,1a,1a,1a,1a,16,1d,17,1a,1a,1a,1a,1a,1a
@@ -210,7 +212,6 @@ ITM 5 9,2
 EXT 0,8 1 15,8 FX tunnel
 EXT 15,7 5 0,7 FX tunnel DLG a
 PAL 3
-TUNE 2
 
 ROOM 5
 e,a,a,a,a,a,a,a,a,a,a,a,a,a,a,f
@@ -234,7 +235,6 @@ ITM 8 11,14
 EXT 0,7 4 15,7 FX tunnel
 EXT 12,3 6 7,8 FX tunnel DLG d
 PAL 7
-TUNE 2
 
 ROOM 6
 0,0,0,0,0,3c,0,3c,0,3c,0,0,0,0,0,0
@@ -255,9 +255,9 @@ ROOM 6
 3c,0,0,0,0,0,3c,0,3c,0,0,0,0,0,3c,0
 NAME BLK 
 ITM b 3,8
+ITM d 7,12
 EXT 7,8 5 12,3 FX tunnel
 PAL a
-TUNE 3
 
 ROOM 7
 e,a,a,a,a,a,a,a,i,a,a,a,a,a,a,f
@@ -281,7 +281,6 @@ ITM 4 1,14
 EXT 8,0 1 8,15 FX tunnel
 EXT 4,15 9 4,0 FX tunnel DLG f
 PAL 4
-TUNE 2
 
 ROOM 8
 34,a,a,a,a,a,a,a,a,a,a,a,a,a,a,37
@@ -291,7 +290,7 @@ c,3i,3i,33,3i,0,2r,2s,0,2v,2u,3i,36,3i,3i,b
 c,0,3i,3i,33,2r,2s,2r,2t,2u,2v,35,3i,3i,0,b
 c,0,0,0,2r,32,2r,2s,3i,2v,35,2v,2u,0,0,b
 c,0,0,2r,2s,2r,32,2r,2t,35,2v,2u,2v,2u,0,b
-c,0,2r,2s,2r,2s,2r,32,36,2w,3i,2w,3i,2w,0,b
+c,0,2r,2s,2r,2s,2r,32,36,2w,3i,2w,3b,2w,0,b
 c,0,2q,0,2q,3i,2q,39,2z,2x,2y,2x,2y,2x,0,b
 c,0,2o,2p,2o,2p,38,2n,2x,2z,2x,2y,2x,0,0,b
 c,0,0,2o,2p,38,2p,3i,2y,2x,2z,2x,0,0,0,b
@@ -303,8 +302,8 @@ c,39,3i,3i,0,0,0,0,0,0,0,0,3i,3i,30,b
 NAME Red
 ITM a 3,8
 EXT 15,12 9 0,12 FX tunnel
+EXT 12,7 c 5,14 FX tunnel DLG 1c
 PAL 9
-TUNE 3
 
 ROOM 9
 e,a,a,a,i,a,a,a,a,q,a,a,a,a,a,f
@@ -329,7 +328,6 @@ EXT 4,0 7 4,15 FX tunnel
 EXT 15,6 a 0,6 FX tunnel DLG b
 EXT 0,12 8 15,12 FX tunnel DLG c
 PAL 6
-TUNE 2
 
 ROOM a
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -352,7 +350,6 @@ NAME Brown
 ITM c 11,9
 EXT 0,6 9 15,6 FX tunnel
 PAL 8
-TUNE 2
 
 ROOM b
 1b,1b,1b,1b,1b,1b,1b,3e,1c,1c,1c,1c,1c,1c,1c,1c
@@ -375,6 +372,27 @@ NAME Sunset
 END g 7,0
 PAL b
 TUNE 1
+
+ROOM c
+e,a,a,a,a,a,a,3t,3u,a,a,a,a,a,a,f
+c,0,0,0,0,0,0,3r,3s,0,0,0,0,0,0,b
+c,0,0,0,0,0,0,0,0,0,0,3b,0,0,0,b
+c,0,0,0,0,0,0,3q,3p,0,0,0,0,0,0,b
+c,0,0,0,0,0,0,3l,3m,0,0,0,0,0,0,b
+c,0,0,0,0,0,0,3l,3m,0,0,0,0,0,0,b
+c,0,0,0,0,3j,0,3l,3m,0,3k,0,0,0,0,b
+c,0,0,0,0,0,0,3l,3m,0,0,0,0,0,0,b
+c,0,0,0,0,3j,0,3l,3m,0,3k,0,0,0,0,b
+c,0,0,0,0,0,0,3l,3m,0,0,0,0,0,0,b
+c,0,0,0,0,3j,0,3l,3m,0,3k,0,0,0,0,b
+c,0,0,0,0,0,0,3l,3m,0,0,0,0,0,0,b
+c,0,0,0,0,3j,0,3l,3m,0,3k,0,0,0,0,b
+c,0,0,0,0,0,0,3l,3m,0,0,0,0,0,0,b
+c,0,0,0,0,0,0,3o,3n,0,0,0,0,0,0,b
+g,d,d,d,d,d,d,d,d,d,d,d,d,d,d,h
+NAME M's
+END 1d 11,2
+PAL c
 
 TIL 10
 11110000
@@ -1741,6 +1759,340 @@ TIL 3i
 01000000
 00000000
 
+TIL 3j
+11111110
+10111010
+00111000
+00010000
+00010000
+00010000
+00010000
+00000000
+WAL true
+
+TIL 3k
+01111111
+01011101
+00011100
+00001000
+00001000
+00001000
+00001000
+00000000
+WAL true
+
+TIL 3l
+00000100
+00000100
+00000100
+00000110
+00000101
+00000100
+00000110
+00000101
+
+TIL 3m
+10100000
+01100000
+00100000
+00100000
+00100000
+10100000
+01100000
+00100000
+
+TIL 3n
+10100000
+01100000
+11100000
+00000000
+00000000
+00000000
+00000000
+00000000
+
+TIL 3o
+00000100
+00000100
+00000111
+00000000
+00000000
+00000000
+00000000
+00000000
+
+TIL 3p
+00000000
+00000000
+00000000
+00000000
+00000000
+11100000
+00100000
+00100000
+
+TIL 3q
+00000000
+00000000
+00000000
+00000000
+00000000
+00000111
+00000110
+00000101
+
+TIL 3r
+00000111
+00000111
+00111111
+00111111
+00111111
+00111111
+00100000
+00100000
+
+TIL 3s
+11100000
+11100000
+11111100
+11111100
+11111100
+11111100
+00000100
+00000100
+
+TIL 3t
+11111111
+11111111
+11111111
+10000111
+00000111
+00000111
+00000111
+00000111
+WAL true
+
+TIL 3u
+11111111
+11111111
+11111111
+11100001
+11100000
+11100000
+11100000
+11100000
+WAL true
+
+SPR 10
+00000000
+00000000
+00001000
+00010100
+00010010
+00100010
+01001001
+01010101
+>
+00000000
+00010000
+00101000
+00100100
+01000010
+10010010
+10101001
+01010101
+NAME B F 6
+DLG 1j
+POS c 10,7
+
+SPR 11
+00000000
+00010000
+00101000
+00100100
+01000010
+10010010
+10101001
+01010101
+>
+00000000
+00000000
+00001000
+00010100
+00010010
+00100010
+01001001
+01010101
+NAME B F 7
+DLG 1k
+POS c 10,9
+
+SPR 12
+00000000
+00000000
+00001000
+00010100
+00010010
+00100010
+01001001
+01010101
+>
+00000000
+00010000
+00101000
+00100100
+01000010
+10010010
+10101001
+01010101
+NAME B F 8
+DLG 1l
+POS c 10,11
+
+SPR 13
+00111001
+00110110
+10010001
+01110000
+00110110
+11111001
+00100000
+00100000
+>
+00110000
+00111011
+10010110
+01110001
+00110000
+11111010
+00100101
+00100000
+NAME M's R
+DLG 1b
+POS c 7,2
+
+SPR 14
+10011100
+01101100
+10001001
+00001110
+01101100
+10011111
+00000100
+00000100
+>
+00001100
+11011100
+01101001
+10001110
+00001100
+01011111
+10100100
+00000100
+NAME M's L
+DLG 1a
+POS c 8,2
+
+SPR 15
+00010000
+01110111
+10000100
+00011000
+00100000
+11000110
+00111001
+00000000
+>
+00100001
+01000010
+10000100
+00010010
+00101100
+11000001
+00100110
+00011000
+POS c 9,2
+
+SPR 16
+00000000
+00110010
+00010010
+00010110
+00001000
+00001000
+00011000
+00010000
+>
+00001000
+01101110
+00100001
+00010111
+00001000
+00011000
+00100000
+00100000
+POS c 9,1
+
+SPR 17
+00000000
+11100000
+00110110
+00011100
+00000000
+00011100
+11110000
+00000000
+>
+11000000
+00100111
+00010101
+00001100
+00000000
+11001100
+00110110
+00000001
+POS c 10,2
+
+SPR 18
+00001000
+11101110
+00100001
+00011000
+00000100
+01100011
+10011100
+00000000
+>
+10000100
+01000010
+00100001
+01001000
+00110100
+10000011
+01100100
+00011000
+POS c 6,2
+
+SPR 19
+00000000
+01001100
+01001000
+01101000
+00010000
+00010000
+00011000
+00001000
+>
+00010000
+01110110
+10000100
+11101000
+00010000
+00011000
+00000100
+00000100
+POS c 6,1
+
 SPR A
 00011000
 00011000
@@ -1749,7 +2101,7 @@ SPR A
 01111110
 10111101
 00100100
-00100100
+00000100
 >
 00011000
 00011000
@@ -1758,7 +2110,7 @@ SPR A
 10111101
 00111100
 00100100
-00100100
+00100000
 POS 0 3,5
 
 SPR a
@@ -2053,6 +2405,148 @@ NAME Pit lore
 DLG 18
 POS 6 10,8
 
+SPR v
+00000000
+00000000
+00010000
+00101000
+00100100
+01000100
+10010010
+10101010
+>
+00000000
+00001000
+00010100
+00100100
+01000010
+01001001
+10010101
+10101010
+NAME B F 1
+DLG 1e
+POS c 5,5
+
+SPR w
+00000000
+00001000
+00010100
+00100100
+01000010
+01001001
+10010101
+10101010
+>
+00000000
+00000000
+00010000
+00101000
+00100100
+01000100
+10010010
+10101010
+NAME B F 2
+DLG 1f
+POS c 5,7
+
+SPR x
+00000000
+00000000
+00010000
+00101000
+00100100
+01000100
+10010010
+10101010
+>
+00000000
+00001000
+00010100
+00100100
+01000010
+01001001
+10010101
+10101010
+NAME B F 3
+DLG 1g
+POS c 5,9
+
+SPR y
+00000000
+00001000
+00010100
+00100100
+01000010
+01001001
+10010101
+10101010
+>
+00000000
+00000000
+00010000
+00101000
+00100100
+01000100
+10010010
+10101010
+NAME B F 4
+DLG 1h
+POS c 5,11
+
+SPR z
+00000000
+00010000
+00101000
+00100100
+01000010
+10010010
+10101001
+01010101
+>
+00000000
+00000000
+00001000
+00010100
+00010010
+00100010
+01001001
+01010101
+NAME B F 5
+DLG 1i
+POS c 10,5
+
+SPR 1a
+00000000
+00000111
+01101100
+00111000
+00000000
+00111000
+00001111
+00000000
+>
+00000011
+11100100
+10101000
+00110000
+00000000
+00110011
+01101100
+10000000
+POS c 5,2
+
+SPR 1b
+00000000
+01111110
+01011110
+01011110
+01011110
+01000110
+01111110
+00000000
+DLG 1m
+POS c 6,4
+
 ITM 1
 00000000
 00111100
@@ -2186,6 +2680,18 @@ ITM c
 NAME Red Key
 DLG 12
 
+ITM d
+00000000
+01000100
+01000100
+00111000
+00010000
+00010000
+00111000
+00000000
+NAME M's Goblet
+DLG 19
+
 DLG 0
 Don't wander too far, lest mother will have to drag you back home. *you must still be under the influence, there's no way this cat just spoke, right?*
 NAME cat dialog
@@ -2270,7 +2776,7 @@ A note with listed steps to follow.
 NAME Preparation Lore dialog
 
 DLG 11
-A child stand before you wearing nothing but a bloodied robe, his eyes have been removed. He stands patiently whispering "It's here."
+A child stand before you wearing nothing but a bloodied robe, his eyes have been removed. He stands silently whimpering "I'm sorry mommy."
 NAME Bloody child's robe dialog
 
 DLG 12
@@ -2286,7 +2792,7 @@ A key! {wvy}What does it open?{wvy} a piece of paper is attached to the key via 
 NAME Black Key dialog
 
 DLG 15
-A book written in a language unfamiliar to you, merely touching this tome sends shivers and tingles throughout your body.
+A book written in a language unfamiliar to you, merely touching this tome sends shivers throughout your body paired with the voice of an...Angel?
 NAME Ritual Lore dialog
 
 DLG 16
@@ -2300,6 +2806,10 @@ NAME Sunset Key dialog
 DLG 18
 On this note, written in blood is one message. "I wish to be transformed."
 NAME Pit lore dialog
+
+DLG 19
+An opulent goblet filled with a thick substance that smells of iron.
+NAME M's Goblet dialog
 
 DLG a
 """
@@ -2372,7 +2882,7 @@ Before you can even make it to the street a being only known as mother drags all
 NAME ending 1
 
 DLG h
-A book filled with signed names, though they all seem like aliases to you.
+A book filled with signed names, though they all seem like aliases to you, the first entry reads Host: Mother.
 NAME Entrance lore dialog
 
 DLG i
@@ -2400,7 +2910,7 @@ A key! {wvy}What does it open?{wvy} a piece of paper is attached to the key via 
 NAME Yellow Key dialog
 
 DLG o
-A journal filled with entries about moon and stargazing.
+A journal filled with entries about moon and stargazing, a place where our shepherd reads to the young flock.
 NAME Moongazing Lore dialog
 
 DLG p
@@ -2408,7 +2918,7 @@ A key! {wvy}What does it open?{wvy} a piece of paper is attached to the key via 
 NAME Pink Key dialog
 
 DLG q
-A research document, based on the findings listed none of these still beating hearts are human. strange.
+A research document, based on the findings listed none of these still beating hearts are human, strange, even more so is that they're labeled as sustenance.
 NAME Collection Lore dialog
 
 DLG r
@@ -2420,7 +2930,7 @@ A key! {wvy}What does it open?{wvy} a piece of paper is attached to the key via 
 NAME SKY Blue Key dialog
 
 DLG t
-A list of "appropriate" reading material sits before you, you recognize some of the names, they're infamous for their propaganda, commonly directed toward the young.
+A list of "appropriate" reading material sits before you, you recognize some of the names, they're infamous for their propaganda, commonly directed toward the young. The person who signed off on these reading is 'Mother'
 NAME Classroom Lore dialog
 
 DLG u
@@ -2446,6 +2956,65 @@ NAME White Key  dialog
 DLG z
 A key! {wvy}What does it open?{wvy} a piece of paper is attached to the key via red string, it's labeled 'Brown Key'
 NAME Brown Key  dialog
+
+DLG 1a
+Mother's left half, it whispers desires.
+NAME M's R dialog
+
+DLG 1b
+Mother's Right half, it screams pleasure.
+NAME M's R dialog 1
+
+DLG 1c
+"""
+{
+  - {item "d"} >= 1 ?
+    {property locked false}{shk}Yes, an intoxicating aroma, come young one, I MUST have more!{/shk}
+  - else ?
+    {property locked true}An offering is needed, buy there is no way back.
+}
+"""
+NAME RD->M's
+
+DLG 1d
+Mother was inspired by your bravery to seek her out and has gifted you a most gracious boon, immortality, though this gift requires a...symbiosis of sorts, you'll now be the flesh puppet for mother as she now lives inside you, forever.
+NAME ending 2
+
+DLG 1e
+Cold black flames illuminate the surrounding area, merely a foot away and it feels like winter.
+NAME B F 1 dialog
+
+DLG 1f
+Cold black flames illuminate the surrounding area, merely a foot away and it feels like winter.
+NAME B F 2 dialog
+
+DLG 1g
+Cold black flames illuminate the surrounding area, merely a foot away and it feels like winter.
+NAME B F 3 dialog
+
+DLG 1h
+Cold black flames illuminate the surrounding area, merely a foot away and it feels like winter.
+NAME B F 4 dialog
+
+DLG 1i
+Cold black flames illuminate the surrounding area, merely a foot away and it feels like winter.
+NAME B F 5 dialog
+
+DLG 1j
+Cold black flames illuminate the surrounding area, merely a foot away and it feels like winter.
+NAME B F 6 dialog
+
+DLG 1k
+Cold black flames illuminate the surrounding area, merely a foot away and it feels like winter.
+NAME B F 7 dialog
+
+DLG 1l
+Cold black flames illuminate the surrounding area, merely a foot away and it feels like winter.
+NAME B F 8 dialog
+
+DLG 1m
+A diary of a young woman whom had been kidnapped early in her life, it's filled with dates paired with actions done to her, this led to a loss of self, insanity. The last entry reads "I've made a deal with a foul beast, but at least now I won't suffer anymore, let all those that didn't come to my aid and their kin be devoured for eternity."
+NAME sprite 1b dialog
 
 VAR a
 42
@@ -14228,9 +14797,6 @@ CHAR 9835
 011011
 011000
 000000
-</script>
-</script>
-</script>
 </script>
 
 </head>
